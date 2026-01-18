@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KioskMaster POS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos críticos para evitar scroll y asegurar legibilidad */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        #root {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .dark input::placeholder {
+            color: #9ca3af !important;
+        }
+
+        /* Scrollbars elegantes */
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+        
+        /* Asegurar que los modales no causen scroll horizontal */
+        .fixed {
+            overflow-x: hidden;
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "xlsx": "https://esm.sh/xlsx@^0.18.5",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "html5-qrcode": "https://esm.sh/html5-qrcode@^2.3.8"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/kioscoPOS/assets/index-BYsPfl4f.js"></script>
+</head>
+<body class="bg-gray-50 dark:bg-black text-gray-900 dark:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <!-- Entry point script with relative path for correct loading on GitHub Pages -->
+</body>
+</html>
