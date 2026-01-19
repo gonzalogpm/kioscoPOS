@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>KioskMaster POS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -54,6 +54,12 @@
         .dark ::-webkit-scrollbar-thumb {
             background: #334155;
         }
+
+        /* Fix para que el escáner no sea gigante */
+        #reader video {
+            border-radius: 1rem;
+            object-fit: cover !important;
+        }
     </style>
 
 <script type="importmap">
@@ -69,7 +75,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/kioscoPOS/assets/index-CMHtGrBA.js"></script>
+  <script type="module" crossorigin src="/kioscoPOS/assets/index-FolMavCm.js"></script>
   <link rel="stylesheet" crossorigin href="/kioscoPOS/assets/index-BZ-dY5pj.css">
 </head>
 <body class="bg-gray-50 dark:bg-black text-gray-900 dark:text-white transition-colors duration-200">
